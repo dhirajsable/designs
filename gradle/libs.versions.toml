@@ -1,0 +1,104 @@
+[versions]
+spotless     = "7.0.0.BETA1"
+springBoot        = "3.3.2"
+springBootSecurity        = "6.3.1"
+springSecurity    = "5.7.1"
+springOAuth    = "3.2.3"
+springCloudVersion= "2020.0.1"
+springCloud       = "2022.0.0"
+pgSql             = "42.7.4"
+micrometer        = "1.10.3"
+springManagement     = "1.0.11.RELEASE"
+openapi     = "6.0.0"
+swagger     = "2.19.2"
+docker     = "0.36.0"
+freefairLombok     = "8.6"
+commonLogging     = "1.2"
+springAWSCloud    = "2.3.3"
+springSession     = "2021.2.0"
+gitProperties     = "2.2.4"
+groovy     = "4.0.19"
+groovyOld     = "3.0.12"
+kotlin     = "1.9.22"
+resilience4j     = "2.2.0"
+slf4j     = "1.7.36"
+jUnit     = "5.10.2"
+kotlinTest     = "1.9.22"
+mockk     = "1.13.10"
+lombok     = "1.18.30"
+googlejavaformat     = "1.20.0"
+webauthn     = "2.5.2"
+cbor     = "4.5.2"
+swaggerAnnotations     = "2.2.20"
+springDoc     = "2.3.0"
+jakartaVallidation     = "3.1.0"
+jakartaPersistence     = "3.2.0"
+jakartaServletApi     = "6.1.0"
+hibernateValidator     = "8.0.1.Final"
+guava = "33.3.1-jre"
+jedis= "5.2.0"
+
+[plugins]
+springBoot = { id = "org.springframework.boot", version.ref = "springBoot"}
+swaggerGenerator = { id = "org.hidetake.swagger.generator", version.ref = "swagger"}
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless"}
+gitProperties = { id = "com.gorylenko.gradle-git-properties", version.ref = "gitProperties"}
+springManagement = { id = "io.spring.dependency-management", version.ref = "springManagement"}
+openapi = { id = "org.openapi.generator", version.ref = "openapi"}
+docker = { id = "com.palantir.docker", version.ref = "docker"}
+freefairLombok = { id = "io.freefair.lombok", version.ref = "freefairLombok"}
+
+
+[libraries]
+springBootBom = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "springBoot"}
+springCloudBom = { module = "org.springframework.cloud:spring-cloud-dependencies", version.ref = "springCloud"}
+springBootSecurityBom = { module = "org.springframework.security:spring-security-bom", version.ref = "springBootSecurity"}
+kotlinBom = { module = "org.jetbrains.kotlin:kotlin-bom", version.ref = "kotlin"}
+resilience4jBom = { module = "io.github.resilience4j:resilience4j-bom", version.ref = "resilience4j"}
+slf4jApi = { module = "org.slf4j:slf4j-api", version.ref = "slf4j"}
+guava = { module = "com.google.guava:guava", version.ref = "guava" }
+googlejavaformat = { module = "com.google.googlejavaformat:google-java-format", version.ref = "googlejavaformat"}
+junitJupiterApi = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "jUnit"}
+junitJupiterEngine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "jUnit"}
+junitJupiterParams = { module = "org.junit.jupiter:junit-jupiter-params", version.ref = "jUnit"}
+kotlintest = { module = "org.jetbrains.kotlin:kotlin-test-junit5", version.ref = "kotlinTest"}
+mockk = { module = "io.mockk:mockk", version.ref = "mockk"}
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok"}
+springCloudAwsDependencies = { module = "io.awspring.cloud:spring-cloud-aws-dependencies", version.ref = "springAWSCloud"}
+springSession = { module = "org.springframework.session:spring-session-bom", version.ref = "springSession"}
+micrometer = { module = "io.micrometer:micrometer-registry-prometheus", version.ref = "micrometer"}
+commonsLogging = { module = "commons-logging:commons-logging", version.ref = "commonLogging"}
+postgresql = { module = "org.postgresql:postgresql", version.ref = "pgSql"}
+groovyOld = { module = "org.codehaus.groovy:groovy", version.ref = "groovyOld"}
+groovyJsonOld = { module = "org.codehaus.groovy:groovy-json", version.ref = "groovyOld"}
+groovyAllOld = { module = "org.codehaus.groovy:groovy-all", version.ref = "groovyOld"}
+groovy = { module = "org.apache.groovy:groovy", version.ref = "groovy"}
+groovyJson = { module = "org.apache.groovy:groovy-json", version.ref = "groovy"}
+groovyAll = { module = "org.apache.groovy:groovy-all", version.ref = "groovy"}
+springBootStarterOAuth2Clien2 = { module = "org.springframework.boot:spring-boot-starter-oauth2-client", version.ref = "springBoot"}
+springBootSecurityStarterOAuth2Clien2 = { module = "org.springframework.security:spring-security-oauth2-client"}
+springBootStarterActuator = { module = "org.springframework.boot:spring-boot-starter-actuator"}
+springBootStarterWeb = { module = "org.springframework.boot:spring-boot-starter-web"}
+springSecurityCore =   { module = "org.springframework.security:spring-security-core", version.ref = "springSecurity"}
+springSecurityConfig = { module = "org.springframework.security:spring-security-config", version.ref = "springSecurity"}
+springSecurityWeb =    { module = "org.springframework.security:spring-security-web", version.ref = "springSecurity"}
+springBootStarterDatJpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa"}
+springBootStarterSecurity = { module = "org.springframework.boot:spring-boot-starter-security"}
+springBootStarterValidator = { module = "org.springframework.boot:spring-boot-starter-validation"}
+webauthnServerCore = { module = "com.yubico:webauthn-server-core", version.ref = "webauthn"}
+cbor = { module = "com.upokecenter:cbor", version.ref = "cbor"}
+springBootStarterTest = { module = "org.springframework.boot:spring-boot-starter-test"}
+springBootAutoconfigure = { module = "org.springframework.boot:spring-boot-autoconfigure"}
+swaggerAnnotations = { module = "io.swagger.core.v3:swagger-annotations", version.ref = "swaggerAnnotations"}
+springdocOpenapiStarter = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version.ref ="springDoc"}
+springDataRedis = { module = "org.springframework.data:spring-data-redis"}
+springDataRedisStarter = { module = "org.springframework.boot:spring-boot-starter-data-redis"}
+jakartaValidationApi = { module = "jakarta.validation:jakarta.validation-api", version.ref = "jakartaVallidation"}
+jakartaPersistenceApi = { module = "jakarta.persistence:jakarta.persistence-api", version.ref = "jakartaPersistence"}
+jakartaServletApi = { module = "jakarta.servlet:jakarta.servlet-api", version.ref = "jakartaServletApi"}
+hibernateValidator = { module = "org.hibernate.validator:hibernate-validator", version.ref = "hibernateValidator"}
+jedis = { module = "redis.clients:jedis", version.ref = "jedis"}
+
+[bundles]
+testFrameworkCompiler = ["junitJupiterApi", "junitJupiterParams", "kotlintest", "mockk"]
+testFrameworkRuntime = ["junitJupiterEngine"]
