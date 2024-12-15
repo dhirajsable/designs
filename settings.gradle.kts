@@ -4,9 +4,10 @@ plugins {
 
 rootProject.name = "interview-design"
 include(":api-usage")
-include(":connection-pool")
-include(":gateway-app")
-include(":rate-limit")
+include(":top-shared-posts")
+//include(":connection-pool")
+//include(":gateway-app")
+//include(":rate-limit")
 
 dependencyResolutionManagement {
     repositories {

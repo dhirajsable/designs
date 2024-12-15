@@ -37,6 +37,8 @@ jakartaServletApi     = "6.1.0"
 hibernateValidator     = "8.0.1.Final"
 guava = "33.3.1-jre"
 jedis= "5.2.0"
+apacheKafka= "3.3.0"
+json= "20240303"
 
 [plugins]
 springBoot = { id = "org.springframework.boot", version.ref = "springBoot"}
@@ -98,6 +100,8 @@ jakartaPersistenceApi = { module = "jakarta.persistence:jakarta.persistence-api"
 jakartaServletApi = { module = "jakarta.servlet:jakarta.servlet-api", version.ref = "jakartaServletApi"}
 hibernateValidator = { module = "org.hibernate.validator:hibernate-validator", version.ref = "hibernateValidator"}
 jedis = { module = "redis.clients:jedis", version.ref = "jedis"}
+apacheKafka = { module = "org.springframework.kafka:spring-kafka", version.ref = "apacheKafka"}
+json = { module = "org.json:json", version.ref = "json"}
 
 [bundles]
 testFrameworkCompiler = ["junitJupiterApi", "junitJupiterParams", "kotlintest", "mockk"]
